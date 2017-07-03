@@ -16,10 +16,17 @@ int iClickCount;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        //The primaryStage   variable is passed to the start method when the launch
+        // method calls the start method.
+
         //button
          btn = new Button();
          btn.setText("Click me Quick");
-         btn.setOnAction(event -> buttonClick());
+         btn.setOnAction(event -> buttonClick());   //this is a "lambda expression"
+
+         //Lambda expressions are a new
+        //feature of Java 8 that are used in situations that would’ve previously
+        //required an anonymous class.
          //label
         lbl = new Label();
         lbl.setText("You have not clicked the button yet!");
