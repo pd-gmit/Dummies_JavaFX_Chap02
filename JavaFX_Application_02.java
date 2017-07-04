@@ -27,7 +27,14 @@ int iClickCount;
          //Lambda expressions are a new
         //feature of Java 8 that are used in situations that would’ve previously
         //required an anonymous class.
-         //label
+
+        //A Lambda expression is a concise way to create an anonymous class that
+        //implements a functional interface. Instead of providing a formal method declaration
+        // that includes the return type, method name, parameter types, and
+        // method body, you simply define the parameter types and the method body.
+        // The Java compiler infers the rest based on the context in which you use the
+        // Lambda expression.  [ref Java FX for Dummies]
+
         lbl = new Label();
         lbl.setText("You have not clicked the button yet!");
 
